@@ -17,22 +17,22 @@ import Products from '@/views/dashboards/Products.vue'
                         <RouterLink class="nav-link active" to="/dashboard"><i class="bi bi-speedometer2 me-1"></i> Dashboard</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink class="nav-link" to="/dashboard/histories"><i class="bi bi-arrow-counterclockwise me-1"></i> History</RouterLink>
-                    </li>
-                    <li class="nav-item">
                         <RouterLink class="nav-link" to="/dashboard/products"><i class="bi bi-shop me-1"></i> Products</RouterLink>
                     </li>
-                    
                     <li class="nav-item">
-                        <RouterLink class="nav-link" to="/"><i class="bi bi-door-closed"></i> Logout</RouterLink>
+                        <RouterLink class="nav-link" to="/dashboard/histories"><i class="bi bi-arrow-counterclockwise me-1"></i> History</RouterLink>
                     </li>
-                    <li class="nav-item ms-2">
-                        <div class="d-flex align-items-center">
-                            <div class="user-avatar me-2">HK</div>
-                            <span class="fw-medium">Honeyfufu Ko</span>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-secondary-subtile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="fi fi-rr-user-trust me-1"></i> Account
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">System Settings</a></li>
+                            <li><a class="dropdown-item" href="#">News Letter</a></li>
+                        <li class="border-top"></li>    
+                        <li><RouterLink class="nav-link" to="/"><i class="bi bi-door-closed"></i> Logout</RouterLink></li>
+                    </ul>
                     </li>
-                    
                     
                 </ul>
             </div>
