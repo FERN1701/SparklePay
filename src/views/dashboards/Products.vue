@@ -1,46 +1,16 @@
-<script setup >
+<script setup>
+
 </script>
 <template>
     <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2><i class="bi bi-receipt me-2"></i>Active Transactions</h2>
-                    <div>
+                    <h2><i class="bi bi-shop me-1"></i> My Products</h2>
+                     <div class="d-flex">
                         <button class="btn mark-paid-btn me-2"><i class="bi bi-download me-1"></i> Export</button>
                         <button class="btn view-details-btn"><i class="bi bi-plus-circle me-1"></i> Add New</button>
                     </div>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <div class="stats-card paid-card">
-                            <div class="card-icon text-center">
-                                <i class="bi bi-check-circle-fill" style="color: #2e8b57;"></i>
-                            </div>
-                            <h3 class="text-center">Paid</h3>
-                            <p class="text-center">Total amount received</p>
-                            <div class="amount paid-amount text-center">$12,850.75</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card unpaid-card">
-                            <div class="card-icon text-center">
-                                <i class="bi bi-exclamation-circle-fill" style="color: var(--dark-pink);"></i>
-                            </div>
-                            <h3 class="text-center">Unpaid</h3>
-                            <p class="text-center">Total amount pending</p>
-                            <div class="amount unpaid-amount text-center">$3,420.50</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card total-card">
-                            <div class="card-icon text-center">
-                                <i class="bi bi-cash-stack" style="color: #6a5acd;"></i>
-                            </div>
-                            <h3 class="text-center">Total</h3>
-                            <p class="text-center">Overall transaction value</p>
-                            <div class="amount total-amount text-center">$16,271.25</div>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- Transaction Cards -->
                 <div id="transaction-list">
                     <!-- Paid Transaction -->

@@ -3,7 +3,7 @@ import Login from '../views/Login.vue'
 import DashboardLayout from '../views/dashboards/Dashboardlayout.vue'
 import Main from '../views/dashboards/Main.vue'
 import Histories from '../views/dashboards/Histories.vue'
-
+import Products from '../views/dashboards/Products.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +27,11 @@ const router = createRouter({
           path: 'histories',
           name: 'histories',
           component: Histories,
+        },
+        {
+          path: 'products',
+          name: 'products',
+          component: Products,
         },
       ]
     }

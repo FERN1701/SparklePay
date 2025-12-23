@@ -1,5 +1,6 @@
 <script setup>
 
+import Products from '@/views/dashboards/Products.vue'
 </script>
 <template>
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
@@ -19,15 +20,16 @@
                         <RouterLink class="nav-link" to="/dashboard/histories"><i class="bi bi-arrow-counterclockwise me-1"></i> History</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-gear me-1"></i> Settings</a>
+                        <RouterLink class="nav-link" to="/dashboard/products"><i class="bi bi-shop me-1"></i> Products</RouterLink>
                     </li>
+                    
                     <li class="nav-item">
                         <RouterLink class="nav-link" to="/"><i class="bi bi-door-closed"></i> Logout</RouterLink>
                     </li>
                     <li class="nav-item ms-2">
                         <div class="d-flex align-items-center">
-                            <div class="user-avatar me-2">AD</div>
-                            <span class="fw-medium">Admin</span>
+                            <div class="user-avatar me-2">HK</div>
+                            <span class="fw-medium">Honeyfufu Ko</span>
                         </div>
                     </li>
                     

@@ -1,7 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import '../../assets/style2.css'
-import Sidebar from '@/components/dashboards/sidebar.vue'
 import Navbar from '@/components/dashboards/Navbar.vue'
 </script>
 <template>
@@ -19,7 +18,6 @@ import Navbar from '@/components/dashboards/Navbar.vue'
             </div>
         </div>
        <div class="row">
-         <Sidebar />
          <RouterView />
        </div>
    </div>
