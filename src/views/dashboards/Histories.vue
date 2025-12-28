@@ -2,10 +2,10 @@
 
 </script>
 <template>
-    <div class="col-lg-12">
+    <div class="col-lg-9">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h2><i class="bi bi-arrow-counterclockwise me-2"></i>History Transactions</h2>
-                     <div class="d-flex">
+                    <div>
                         <button class="btn mark-paid-btn me-2"><i class="bi bi-download me-1"></i> Export</button>
                         <button class="btn view-details-btn"><i class="bi bi-plus-circle me-1"></i> Add New</button>
                     </div>
