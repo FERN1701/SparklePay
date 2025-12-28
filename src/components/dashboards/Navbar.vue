@@ -14,7 +14,7 @@ import Products from '@/views/dashboards/Products.vue'
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <RouterLink class="nav-link active" to="/dashboard"><i class="bi bi-speedometer2 me-1"></i> Dashboard</RouterLink>
+                        <RouterLink class="nav-link " to="/dashboard"><i class="bi bi-speedometer2 me-1"></i> Dashboard</RouterLink>
                     </li>
                     <li class="nav-item">
                         <RouterLink class="nav-link" to="/dashboard/products"><i class="bi bi-shop me-1"></i> Products</RouterLink>

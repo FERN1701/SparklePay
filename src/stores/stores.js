@@ -6,7 +6,9 @@ export const productStore = defineStore('productStore', () => {
     const products = ref([])
     const productForm = ref(false)
     const newProducts = ref({ id:'', name:'', price:0, stock:0, description: '' })
+    const updateProducts = ref({ id:'', name:'', price:0, stock:0, description: '' })
     const generateId = () => Math.random().toString(36).substr(2, 9)
+    const getProdID = ref(null)
     
     const stored = localStorage.getItem('listproducts')
     if (stored) products.value = JSON.parse(stored)
@@ -22,10 +24,31 @@ export const productStore = defineStore('productStore', () => {
         }
         Object.assign(newProducts.value, { id:'', name:'', price:0, stock:0, description: '' })
     }
+
+    const idModifyProd = (id) => {
+        getProdID.value = id
+        updateProducts.value = { ...products.value[id]}
+        formTrigger()
+    }
+
+    const updateProductFunction = () => {
+        if( getProdID.value !== null && updateProducts.value.name.trim() && updateProducts.value.price > 0 && updateProducts.value.stock >= 0 ){
+            products.value[getProdID.value] = { ...updateProducts.value}
+            getProdID.value = null
+            Object.assign(updateProducts.value, { id:'', name:'', price:0, stock:0, description: '' })
+            console.log('Product Updated Successfully')
+            
+        }
+
+    }
+
     const deleteProducts = (id) =>{
         products.value.splice(id, 1)
         console.log('Delete Product')
     }
+
+
+    
 
     const formTrigger = () =>{
         productForm.value = !productForm.value
@@ -33,9 +56,13 @@ export const productStore = defineStore('productStore', () => {
 
     return {
         products,
-        formTrigger,
+        updateProducts,
         productForm,
         newProducts,
+        getProdID,
+        formTrigger,
+        idModifyProd,
+        updateProductFunction,
         addProducts,
         deleteProducts,
     }
